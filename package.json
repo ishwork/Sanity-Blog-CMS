@@ -1,0 +1,26 @@
+{
+  "name": "sanity-blog-cms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sanity dev",
+    "start": "sanity start",
+    "build": "sanity build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sanity/vision": "^5.9.0",
+    "react": "^19.2.2",
+    "react-dom": "^19.2.2",
+    "sanity": "^5.9.0",
+    "styled-components": "^6.3.9"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3"
+  }
+}
