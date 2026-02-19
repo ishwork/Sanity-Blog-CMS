@@ -37,6 +37,13 @@ export const blogPost = defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: 'imageCredit',
+      title: 'Image Credit',
+      type: 'string',
+      description: 'Credit for the main image (photographer, source, etc.)',
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
       name: 'publishedAt',
       title: 'Published Date',
       type: 'datetime',
@@ -102,10 +109,17 @@ export const blogPost = defineType({
               title: 'Alternative Text',
               description: 'Important for SEO and accessibility',
             },
+            {
+              name: 'imageCredit',
+              type: 'string',
+              title: 'Image Credit',
+              description: 'Credit for the image (photographer, source, etc.)',
+            },
           ],
         },
       ],
       validation: (Rule) => Rule.required(),
+      
     }),
   ],
   preview: {
