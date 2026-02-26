@@ -41,7 +41,7 @@ export const blogPost = defineType({
       title: 'Image Credit',
       type: 'string',
       description: 'Credit for the main image (photographer, source, etc.)',
-      validation: (Rule) => Rule.required(),
+      // validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'publishedAt',
